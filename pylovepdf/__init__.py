@@ -1,6 +1,6 @@
 from .ilovepdf import ILovePdf
 from .tools.compress import Compress
-from .tools.imagetopdf import ImageToPdf
+from .tools.imagetopdf import Imagetopdf
 from .tools.merge import Merge
 from .tools.officepdf import OfficeToPdf
 from .tools.pagenumber import Pagenumber
