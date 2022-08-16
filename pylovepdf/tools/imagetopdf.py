@@ -1,7 +1,7 @@
 from pylovepdf.task import Task
 
 
-class ImageToPdf(Task):
+class Imagetopdf(Task):
 
     def __init__(self, public_key, verify_ssl, proxies):
 
@@ -11,7 +11,7 @@ class ImageToPdf(Task):
         self.merge_after = True
 
         self.tool = 'imagetopdf'
-        super(ImageToPdf, self).__init__(public_key, True, verify_ssl, proxies)
+        super(Imagetopdf, self).__init__(public_key, True, verify_ssl, proxies)
 
     @property
     def allowed_properties(self):
@@ -24,7 +24,7 @@ class ImageToPdf(Task):
 
     def process(self):
 
-        payload = super(ImageToPdf, self).process()
+        payload = super(Imagetopdf, self).process()
         payload = self.as_dict(payload, self.allowed_properties)
 
         return payload
